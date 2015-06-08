@@ -16,7 +16,12 @@
 		<section id="main">
 
 			<h1 class="logo-font"><?php echo the_title() ?></h1>
-			MAIN - FRONT
+			
+			<?php $featured_stories = new WP_Query(array('post_type' => 'story')); ?>
+
+			<?php if($featured_stories->have_posts()): while($featured_stories->have_posts()): $featured_stories->the_post(); ?>
+					<?php get_template_part('article', 'featured'); ?>
+			<?php endwhile; endif; ?>
 
 		</section>
 
