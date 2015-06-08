@@ -37,5 +37,21 @@ function gatogordo_register_my_menus() {
   	);
 }
 
+add_action( 'init', 'gg_mor_create_post_type' );
+
+function gg_mor_create_post_type() {
+  register_post_type( 'acme_product',
+    array(
+      'labels' => array(
+        'name' => __( 'Stories' ),
+        'singular_name' => __( 'Story' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'menu_position' => 5
+    )
+  );
+}
+
 acf_add_options_page();
 
