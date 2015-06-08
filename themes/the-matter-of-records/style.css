@@ -1,0 +1,264 @@
+/* 
+Theme Name: The Matter of Records Theme
+Author: Gato Gordo Digital Creative
+Author URI: http://gatogordoweb.com
+*/
+
+/*
+
+CONTENTS:
+
+GENERAL
+TEXT
+HEADER	
+NAV
+MAST
+SUB-MAST
+MAIN
+HOME
+FORM
+FOOTER
+
+*/
+
+/* GENERAL */
+* {
+	-webkit-transition: .5s; 
+    transition: .5s;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+div, section, header, footer {
+	overflow: hidden;
+	position: relative;
+}
+section, header, footer {
+	clear: both;
+}
+img {
+	border-radius: 2px;
+}
+
+/* TEXT */
+@font-face { 
+	font-family: Logo; src: url('fonts/spinwerad.ttf'); 
+} 
+body {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 80%;
+}
+h2, h3, h4, h5, h6, nav ul li a, .post-meta {
+	font-family: 'Dosis', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+a {
+	border-radius: 2px;
+	text-decoration: none;
+	color: #000;
+}
+a:hover, li.current a {
+	background: #edf968;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 10px 0;
+}
+h1, .logo-font {
+	font-family: 'Logo', serif;
+	color: #60020d;
+}
+h1 {
+	font-size: 200%;
+}
+i.fa {
+	color: #60020d;
+	font-size: 80%;
+	position: relative;
+	top: -1px;
+}
+
+/* HEADER */
+header {
+	position: fixed;
+	width: 90%;
+	z-index: 5;
+	height: 42px;
+	top: 0;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 0 5%;
+}
+#header-left {
+	float: left;
+}
+#header-right {
+	float: right;
+	text-align: right; 
+}
+
+/* NAV */
+nav ul {
+	padding: 0;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+}
+#header-left ul li, 
+#footer-left nav ul li {
+	padding-right: 20px;
+}
+#header-right ul li, 
+#footer-right nav ul li {
+	padding-left: 20px;
+}
+
+/* MAST */
+section#mast {
+	margin-top: 42px;
+	text-align: center;
+}
+section#mast img {
+	width: 100%;
+}
+section#mast a {
+	position: absolute; 
+	display: block;
+	width: 25%;
+	height: 32%;
+	top: 19%;
+	left: 27%;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: 400%;
+	padding: 13% 10% 7% 10%;
+	color: rgba(0, 0, 0, 0.7);
+}
+section#mast a span {
+	font-size: 180%;
+	line-height: 70%;
+}
+section#mast a:hover {
+	background: rgba(237, 249, 104, 0.5);
+	border: 1px solid rgba(237, 249, 104, 0.5);
+	color: #60020d;
+}
+
+/* SUB-MAST */
+section#sub-mast {
+	background: #eaeaea;
+	text-align: center;
+	padding: 10px;
+}
+section#sub-mast .logo {
+	width: 500px;
+	max-width: 90%;
+}
+#interior section#sub-mast {
+	margin-top: 42px;
+}
+section#sub-mast a:hover {
+	background: none;
+}
+
+/* MAIN */
+section#main {
+	margin: 30px auto;
+	width: 90%;
+	min-height: 400px;
+}
+section#main p {
+	text-align: justify;
+}
+
+/* HOME */
+div.featured-story {
+	width: 48%;
+	padding-bottom: 30px;
+}
+div.featured-story:nth-child(even) {
+	float: left;
+	clear: both;
+}
+div.featured-story:nth-child(odd) {
+	float: right;
+}
+div.featured-story h2,
+div.featured-story p {
+	margin: 0;
+}
+div.featured-story a.image-link {
+	background: #edf968;
+	display: block;	
+	margin-bottom: 4px;
+}
+div.featured-story img {
+	width: 100%;
+}
+div.featured-story img:hover {
+	opacity: 0.7;
+}
+
+/* FORM */
+form input, form textarea {
+	clear: both;
+	width: 50%;
+	border-radius: 2px;
+	box-shadow: none;
+	border: 1px solid #edf968;
+	margin-bottom: 10px; 
+	padding: 5px; 
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+}
+form textarea {
+	width: 100%;
+	font-size: 120%;
+}
+form input:focus, form textarea:focus {
+	border: 1px solid #60020d;
+	outline: none;
+}
+form textarea {
+	resize: none;
+	height: 350px; 
+}
+form label {
+	padding-left: 10px; 
+}
+form label i:last-child {
+	padding-right: 3px;
+}
+input[type="submit"] {
+	font-family: 'Logo', serif;
+	background: #60020d;
+	color: #edf968;
+	border: none;
+	width: auto;
+	cursor: pointer;
+	font-size: 120%;
+	padding: 5px 12px;
+}
+input[type="submit"]:hover {
+	background: #edf968;
+	color: #60020d;
+}
+
+/* FOOTER */
+footer {
+	background: #eaeaea;
+	padding: 0 5%;
+	font-size: 90%;
+}
+#footer-left {
+	float: left;
+}
+#footer-right {
+	float: right;
+	text-align: right;
+}
