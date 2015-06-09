@@ -40,11 +40,17 @@ function gatogordo_register_my_menus() {
 add_action( 'init', 'gg_mor_create_post_type' );
 
 function gg_mor_create_post_type() {
-  register_post_type( 'acme_product',
+  register_post_type( 'story',
     array(
       'labels' => array(
         'name' => __( 'Stories' ),
-        'singular_name' => __( 'Story' )
+        'singular_name' => __( 'Story' ),
+	   'add_new' => _x('Add New', 'story'),	 
+	   'add_new_item' => __('Add New Story'),
+	   'edit_item' => __('Edit Story'), 
+	   'new_item' => __('New Story'),
+	   'view_item' => __('View Story'), 
+	   'search_items' => __('Search Stories') 
       ),
       'public' => true,
       'has_archive' => true,
@@ -55,3 +61,8 @@ function gg_mor_create_post_type() {
 
 acf_add_options_page();
 
+function gg_mor_custom_excerpt_length( $length ) {
+	return 10;
+}
+
+add_filter( 'excerpt_length', 'gg_mor_custom_excerpt_length', 999 );
