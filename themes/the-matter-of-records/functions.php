@@ -52,6 +52,10 @@ function gg_mor_create_post_type() {
 	   'view_item' => __('View Story'), 
 	   'search_items' => __('Search Stories') 
       ),
+	'supports' => array(
+		'thumbnail',
+		'excerpt',
+	),
       'public' => true,
       'has_archive' => true,
       'menu_position' => 5
