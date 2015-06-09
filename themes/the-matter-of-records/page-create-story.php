@@ -10,7 +10,7 @@
 	<section id="main">
 		<h1 class="logo-font">Submit A Story</h1>
 		<?php 
-			gravity_form( 1, true);
+			gravity_form( 1, false);
 		?>
 
 	</section>

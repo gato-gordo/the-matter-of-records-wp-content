@@ -2,6 +2,9 @@
 Theme Name: The Matter of Records Theme
 Author: Gato Gordo Digital Creative
 Author URI: http://gatogordoweb.com
+<a href="http://fontawesome.io/" target="_blank">Font Awesome 4.3 CDN</a>,
+<a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.2</a>.
+Version: 4.6.2
 */
 
 /*
@@ -247,6 +250,37 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background: #edf968;
 	color: #60020d;
+}
+.gform_wrapper .top_label .gfield_label {
+	font-weight: normal !important;
+	margin-left: 0;
+}
+.ginput_container, .gform_wrapper .ginput_complex {
+	overflow: initial;
+}
+.gform_wrapper .description_above .gfield_description {
+	float: right;
+	width: 50%;
+	padding: 0;
+	position: relative;
+	top: 23px;
+	font-size: 115%;
+	padding-left: 5px;
+}
+.gform_wrapper .description_above .gfield_description:before {
+	content: '\f053\f053';
+	font-family: FontAwesome;
+  	font-weight: normal;
+  	color: #60020d;
+  	font-style: normal;
+  	display: inline-block;
+  	text-decoration: inherit;
+  	padding-right: 5px;
+}
+.gform_wrapper .top_label input.medium,
+.gform_wrapper .top_label textarea.textarea {
+	font-size: 120%;
+	padding: 5px 7px;
 }
 
 /* FOOTER */
